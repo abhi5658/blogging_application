@@ -1,0 +1,33 @@
+.post-container {
+  /* background: #e2e8d5; */
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  margin: 0 2%;
+  background-clip: padding-box;
+}
+
+.post-content {
+  background: #fbecae;
+  padding: 3%;
+}
+
+a {
+  color: inherit;
+  /* Use the color of the parent element */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.shortblog-heading {
+  min-height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}

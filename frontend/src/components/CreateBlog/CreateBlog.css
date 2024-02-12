@@ -1,0 +1,23 @@
+.create-blog-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 500px;
+  /* overflow: auto; */
+}
+
+label {
+  color: rgb(38, 42, 41);
+  font-size: large
+}
+
+#body {
+  height: 200px;
+  width: 500px;
+  max-width: 500px;
+  overflow: auto;
+  text-wrap: pretty;
+}

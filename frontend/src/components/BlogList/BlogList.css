@@ -1,0 +1,14 @@
+body {
+  background-color: #90c45b;
+  /* #d9e7cb*/
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+}
