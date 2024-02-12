@@ -1,15 +1,17 @@
+const uuidV4 = require('uuid').v4;
 const { Blog, sequelize } = require('../models');
 
-module.exports.createBlog = async (uuid, title, content) => {
+module.exports.createBlog = async (uuid, title, image, body, author) => {
     const blog = await Blog.create({
-        uuid,
+        uuid: uuid || uuidV4(),
         title,
-        content
+        image,
+        body,
+        author
     });
     return blog;
 }
 module.exports.getBlog = async (id) => {
-
     const blog = await Blog.findOne({
         where: {
             id

@@ -1,12 +1,13 @@
 const blogService = require('../services/blogService')
 
 module.exports.createBlog = async (req, res, next) => {
-    const { uuid, title, content } = req.body;
+    const { uuid, title, image, body, author } = req.body;
 
-    const blog = await blogService.createBlog(uuid, title, content);
+    const blog = await blogService.createBlog(uuid, title, image, body, author);
 
     res.json({
         message: 'success',
+        image,
         blog,
     });
 }

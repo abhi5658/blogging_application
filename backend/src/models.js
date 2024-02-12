@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: process.env.NODE_ENV === 'test' ? './backend/database-test.sqlite3' : './backend/database.sqlite3',
+  storage: process.env.NODE_ENV === 'test' ? './database-test.sqlite3' : './database.sqlite3',
   logging: process.env.NODE_ENV === 'test' ? false : undefined,
 });
 
@@ -17,10 +17,18 @@ Blog.init(
       type: Sequelize.TEXT,
       allowNull: false,
     },
-    content: {
+    image: {
       type: Sequelize.TEXT,
       allowNull: false,
     },
+    body: {
+      type: Sequelize.TEXT,
+      allowNull: false,
+    },
+    author: {
+      type: Sequelize.TEXT,
+      allowNull: false,
+    }
   },
   {
     sequelize,
