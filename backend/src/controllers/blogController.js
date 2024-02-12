@@ -7,7 +7,6 @@ module.exports.createBlog = async (req, res, next) => {
 
     res.json({
         message: 'success',
-        image,
         blog,
     });
 }

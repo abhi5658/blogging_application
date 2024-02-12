@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "5fcf7e79-ab6f-4ae4-a760-0ed279aeb9b5",
+		"name": "Blogging Application [Abhishek Shah]",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11273162",
+		"_collection_link": "https://www.postman.com/abhishek-tech/workspace/public-workspace/collection/11273162-5fcf7e79-ab6f-4ae4-a760-0ed279aeb9b5?action=share&source=collection_link&creator=11273162"
+	},
+	"item": [
+		{
+			"name": "/ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/ping",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"ping"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "18"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12-6FyCUNJCdUkgXM8yXmM99u6fQw0\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 16 Jan 2024 21:42:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"pong\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/blog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uuid\": \"{{$randomUUID}}\",\n    \"title\": \"{{$randomCatchPhrase}}\",\n    \"image\": \"https://picsum.photos/seed/{{$randomInt}}/200/300\",\n    \"body\": \"{{$randomPhrase}} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n    \"author\": \"{{$randomFullName}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3001/blog",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blog"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uuid\": \"{{$randomUUID}}\",\n    \"title\": \"{{$randomCatchPhrase}}\",\n    \"image\": \"https://picsum.photos/seed/{{$randomInt}}/200/300\",\n    \"body\": \"{{$randomPhrase}} Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n    \"author\": \"{{$randomFullName}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/blog",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"blog"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "978"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3d2-+TEEcrtvE0z88xQzF/lj+KJQBKM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 20:55:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"success\",\n    \"image\": \"https://picsum.photos/seed/359/200/300\",\n    \"blog\": {\n        \"id\": 9,\n        \"uuid\": \"d07541f2-8d17-45e1-9b33-dc328f11c6c4\",\n        \"title\": \"Programmable mobile encoding\",\n        \"image\": \"https://picsum.photos/seed/359/200/300\",\n        \"body\": \"I'll calculate the 1080p JSON matrix, that should alarm the CSS card! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\",\n        \"author\": \"Billie Gerhold\",\n        \"updatedAt\": \"2024-02-12T20:55:23.291Z\",\n        \"createdAt\": \"2024-02-12T20:55:23.291Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "/blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3001/blogs",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/blogs",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"blogs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4860"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12fc-/EysYz6wtFg4QDGtE3vQlDGIFvk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 23:34:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"success\",\n    \"blogs\": [\n        {\n            \"id\": 8,\n            \"uuid\": \"d47a6f26-2d72-4498-925b-f09fe925a9de\",\n            \"title\": \"Sustainable Living: Practical Tips for Reducing Your Environmental Footprint\",\n            \"image\": \"https://picsum.photos/seed/8/500/300\",\n            \"body\": \"Interested in living more sustainably? This blog offers actionable tips for reducing your environmental impact in everyday life. From adopting eco-friendly habits to making conscious consumer choices and minimizing waste, discover simple yet effective ways to contribute to a healthier planet for future generations.\",\n            \"author\": \"Lindsay Okuneva\",\n            \"createdAt\": \"2024-02-12T22:54:38.884Z\",\n            \"updatedAt\": \"2024-02-12T22:54:38.884Z\"\n        },\n        {\n            \"id\": 7,\n            \"uuid\": \"c1468d42-b35c-4392-b2ef-86dde10dc585\",\n            \"title\": \"The Power of Storytelling in Marketing: Crafting Compelling Narratives That Drive Engagement\",\n            \"image\": \"https://picsum.photos/seed/7/500/300\",\n            \"body\": \"Storytelling is a timeless tool in marketing. This blog explores the art of storytelling and its impact on consumer engagement and brand loyalty. Learn how to craft authentic narratives that resonate with your audience, evoke emotion, and leave a lasting impression on potential customers.\",\n            \"author\": \"Gary O'Hara\",\n            \"createdAt\": \"2024-02-12T22:54:38.883Z\",\n            \"updatedAt\": \"2024-02-12T22:54:38.883Z\"\n        },\n        {\n            \"id\": 6,\n            \"uuid\": \"9332f8be-795e-448d-bf1a-32b1c04032e2\",\n            \"title\": \"Understanding Cryptocurrency: A Beginner's Guide to Digital Currency\",\n            \"image\": \"https://picsum.photos/seed/6/500/300\",\n            \"body\": \"Cryptocurrency is reshaping the financial landscape, but what exactly is it? This blog provides a beginner-friendly introduction to cryptocurrency, covering topics such as blockchain technology, Bitcoin, Ethereum, and the potential implications of decentralized finance (DeFi) on traditional banking systems.\",\n            \"author\": \"Ralph Hane\",\n            \"createdAt\": \"2024-02-12T22:54:38.883Z\",\n            \"updatedAt\": \"2024-02-12T22:54:38.883Z\"\n        },\n        {\n            \"id\": 5,\n            \"uuid\": \"ee28d546-d72e-4fe8-bd54-33a31f5d4f60\",\n            \"title\": \"Mastering the Art of Time Management: Techniques for Increased Productivity\",\n            \"image\": \"https://picsum.photos/seed/5/500/300\",\n            \"body\": \"Time management is crucial for success in both personal and professional endeavors. This blog explores proven techniques such as the Pomodoro Technique, Eisenhower Matrix, and time blocking to help you prioritize tasks, minimize distractions, and make the most of your time.\",\n            \"author\": \"Mike Brown\",\n            \"createdAt\": \"2024-02-12T22:54:38.883Z\",\n            \"updatedAt\": \"2024-02-12T22:54:38.883Z\"\n        },\n        {\n            \"id\": 4,\n            \"uuid\": \"8fe25a82-e16c-4b72-82e5-4029cbbf7c90\",\n            \"title\": \"The Psychology of Color in Marketing: How Colors Influence Consumer Behavior\",\n            \"image\": \"https://picsum.photos/seed/4/500/300\",\n            \"body\": \"Uncover the fascinating role of color in marketing. From creating brand identity to influencing purchasing decisions, colors play a powerful role in shaping consumer perceptions and behaviors. This blog delves into the psychology behind different colors and offers strategies for leveraging color psychology in your marketing campaigns.\",\n            \"author\": \"Sarah Lee\",\n            \"createdAt\": \"2024-02-12T22:54:38.883Z\",\n            \"updatedAt\": \"2024-02-12T22:54:38.883Z\"\n        },\n        {\n            \"id\": 3,\n            \"uuid\": \"57cd4f70-1a9b-4e65-b597-5338d847215c\",\n            \"title\": \"Navigating the Gig Economy: Tips for Freelancers and Independent Contractors\",\n            \"image\": \"https://picsum.photos/seed/3/500/300\",\n            \"body\": \"Are you considering joining the gig economy? This blog provides valuable advice for freelancers and independent contractors. From managing finances to finding clients and maintaining work-life balance, discover practical tips and insights to thrive in the world of freelance work and gig opportunities.\",\n            \"author\": \"Bob Johnson\",\n            \"createdAt\": \"2024-02-12T22:54:38.883Z\",\n            \"updatedAt\": \"2024-02-12T22:54:38.883Z\"\n        },\n        {\n            \"id\": 2,\n            \"uuid\": \"3f584a6f-8d06-4100-9ed6-12b922c64b58\",\n            \"title\": \"The Rise of Plant-Based Diets: Health Benefits and Sustainability\",\n            \"image\": \"https://picsum.photos/seed/2/500/300\",\n            \"body\": \"Dive into the growing trend of plant-based diets. Explore the health benefits of eating more fruits, vegetables, and whole grains, as well as the environmental impact of reducing meat consumption. Learn how embracing plant-based eating can promote personal health and contribute to a more sustainable food system.\",\n            \"author\": \"Jane Smith\",\n            \"createdAt\": \"2024-02-12T22:54:38.883Z\",\n            \"updatedAt\": \"2024-02-12T22:54:38.883Z\"\n        },\n        {\n            \"id\": 1,\n            \"uuid\": \"02207024-4ff0-495b-95e3-febb8f43e4a1\",\n            \"title\": \"The Impact of Artificial Intelligence on Healthcare\",\n            \"image\": \"https://picsum.photos/seed/1/500/300\",\n            \"body\": \"Discover the transformative potential of AI in healthcare. From diagnosing diseases to personalizing treatment plans, AI is revolutionizing patient care. This blog explores how AI technologies like machine learning and natural language processing are reshaping the healthcare landscape, improving outcomes, and saving lives.\",\n            \"author\": \"John Doe\",\n            \"createdAt\": \"2024-02-12T22:54:38.883Z\",\n            \"updatedAt\": \"2024-02-12T22:54:38.883Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "/blogs/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "profile_id",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3001/blogs/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"blogs",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "profile_id",
+								"value": "2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3001/blogs/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"blogs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "648"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"288-y5XK3ICM2Fzfo9YWydRRpmN47Vo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Feb 2024 23:34:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"success\",\n    \"blog\": {\n        \"id\": 8,\n        \"uuid\": \"d47a6f26-2d72-4498-925b-f09fe925a9de\",\n        \"title\": \"Sustainable Living: Practical Tips for Reducing Your Environmental Footprint\",\n        \"image\": \"https://picsum.photos/seed/8/500/300\",\n        \"body\": \"Interested in living more sustainably? This blog offers actionable tips for reducing your environmental impact in everyday life. From adopting eco-friendly habits to making conscious consumer choices and minimizing waste, discover simple yet effective ways to contribute to a healthier planet for future generations.\",\n        \"author\": \"Lindsay Okuneva\",\n        \"createdAt\": \"2024-02-12T22:54:38.884Z\",\n        \"updatedAt\": \"2024-02-12T22:54:38.884Z\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

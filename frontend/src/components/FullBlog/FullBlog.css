@@ -1,4 +1,4 @@
-.fullpost-container {
+.fullblog-container {
   /* background: #e2e8d5; */
   display: flex;
   flex-direction: column;
@@ -6,19 +6,19 @@
   margin: 0 2%;
 }
 
-.fullpost-content {
+.fullblog-content {
   background: #fbecae;
   padding: 3%;
 }
 
-.fullpost-heading {
+.fullblog-heading {
   min-height: 50px;
   text-align: center;
   display: flex;
   align-items: center;
 }
 
-.fullpost-image {
+.fullblog-image {
   width: 100%;
   height: 250px;
 }

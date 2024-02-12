@@ -1,13 +1,14 @@
-.post-container {
+.blog-container {
   /* background: #e2e8d5; */
   display: flex;
   flex-direction: column;
+  text-wrap: wrap;
   padding: 3%;
   margin: 0 2%;
   background-clip: padding-box;
 }
 
-.post-content {
+.blog-content {
   background: #fbecae;
   padding: 3%;
 }
@@ -20,14 +21,14 @@ a {
 }
 
 .shortblog-heading {
-  min-height: 20px;
+  /* min-height: 20px; */
   text-align: center;
   display: flex;
   align-items: center;
 }
 
 .image {
-  width: 100%;
+  width: 90%;
   height: 210px;
   object-fit: cover;
 }

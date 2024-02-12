@@ -24,10 +24,10 @@ const FullBlog = (all) => {
       <Link to={'/'} >
         <button>Go back</button>
       </Link>
-      <div className="fullpost-container" >
-        <div className="fullpost-content" >
-          <h1 className="fullpost-heading">{id} - {title}</h1>
-          <img className="fullpost-image" src={image} alt="post" />
+      <div className="fullblog-container" >
+        <div className="fullblog-content" >
+          <h1 className="fullblog-heading">{id} - {title}</h1>
+          <img className="fullblog-image" src={image} alt="post" />
           <p>{body}</p>
           <div className="info">
             <h4>Written by: {author}</h4>

@@ -16,10 +16,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   }, {
-    path: "/posts",
+    path: "/blogs",
     element: <App />,
   }, {
-    path: "/posts/:id",
+    path: "/blogs/:id",
     element: <FullBlog />,
     loader: FullBlogLoader,
   }, {
