@@ -53,11 +53,11 @@ npm run start
 1. `/blogs/:id` - Open full blog
 1. `/create` - Create a new blog
 
-## Understanding FRONTEND project structure
+## Understanding frontend project structure
 - `src/components` contains all the UI components
 - `src/services` contains independent functions to perform different backend API calls
 
-Testing the frontend
+## Testing the frontend 🎮
 - Go to backend directory
 ```sh
 cd frontend/
