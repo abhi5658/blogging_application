@@ -26,7 +26,7 @@ const CreateBlog = () => {
         <button>Go back</button>
       </Link>
       <div className="create-blog-container" >
-        <Form method="post" id="create-blog" onKeyDown={e => e.preventDefault()}>
+        <Form method="post" id="create-blog" onKeyDown={e => e.key === 'Enter' && e.preventDefault()}>
           <label htmlFor="title">Title</label>
           <br />
           <input type="text" id="title" name="title" defaultValue={dummyTitle} height={200} />
