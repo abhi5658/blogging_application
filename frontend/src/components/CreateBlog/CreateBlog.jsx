@@ -17,7 +17,7 @@ const CreateBlog = () => {
   const randomInt = `${Math.floor(Math.random() * 10000)}`;
   const dummyTitle = `Title ${randomInt}`;
   const dummyBody = `Body ${(randomInt + ' ').repeat(1000)} `;
-  const dummyImage = `https://picsum.photos/seed/${randomInt}/200/300`;
+  const dummyImage = `https://picsum.photos/seed/${randomInt}/700/500`;
   const dummyAuthor = `Author ${randomInt}`;
 
   return (
