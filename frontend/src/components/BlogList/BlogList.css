@@ -4,6 +4,7 @@ body {
 }
 
 .posts-container {
+  text-align: center;
   display: grid;
   flex-direction: column;
   overflow-y: scroll;
