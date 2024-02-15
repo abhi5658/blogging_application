@@ -1,3 +1,5 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const { sequelize, Blog } = require('../src/models');
 const uuidV4 = require('uuid').v4;
 
