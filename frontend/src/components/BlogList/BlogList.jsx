@@ -39,7 +39,11 @@ const BlogList = () => {
               <br></br>
               <div>Loading...</div>
               <br></br>
-              <div>Cold booting backend ❄️ might a add delay of upto 1 minute. Please wait ⏳</div>
+              <div>Thank you for taking out time to visit</div>
+              <br></br>
+              <div>Backend is booting up ❄️</div>
+              <br></br>
+              <div>It might take a max of 1 minute. Please wait ⏳</div>
             </div>
           ) // Render loader while loading is true
           : blogs.map((post, index) => (
